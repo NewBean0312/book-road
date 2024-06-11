@@ -1,8 +1,13 @@
-import React from 'react'
+import React from 'react';
+import Header from "../components/common/Header";
 
-const MainPage = () => {
+import "../styles/Main.scss";
+
+const MainPage:React.FC = () => {
   return (
-    <div>MainPage</div>
+    <div className='container'>
+        <Header />
+    </div>
   )
 }
 

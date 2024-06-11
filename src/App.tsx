@@ -1,6 +1,5 @@
 import axios from "axios";
 import React, { useEffect, useState } from "react";
-import { Navigate, Route, Routes } from "react-router-dom";
 import MainPage from "./pages/MainPage";
 
 // API 데이터 타입
@@ -35,9 +34,7 @@ const App: React.FC = () => {
 
   return (
     <>
-      {data?.map((item, index) => (
-        <div key={index}>{item.schNm}</div>
-      ))}
+      <MainPage />
     </>
   );
 };

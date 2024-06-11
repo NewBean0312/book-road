@@ -1,0 +1,27 @@
+@import "./Color.scss";
+@import "./Mixin.scss";
+
+.container {
+  @include fullContainer;
+  padding: 10px;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.header {
+  @include fullContainer;
+  text-align: center;
+
+  h1 {
+    @include fontStyle($main-color, 40px, bold);
+  }
+
+  .sub-header {
+    @include fontStyle($sub-color, 20px, bold);
+  }
+}
+
+.title-bar {
+  @include fullContainer;
+}
