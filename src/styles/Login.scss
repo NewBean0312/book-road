@@ -4,7 +4,7 @@
 .login-container {
   @include fullContainer;
   @include flex(column, center, center);
-  padding: 50px 3.5rem;
+  padding: 50px 2.5rem;
 
   .login-field {
     width: 100%;
@@ -15,6 +15,7 @@
       margin-bottom: 40px;
     }
   }
+  
 
   .login-btn {
     width: 100%;
@@ -23,6 +24,26 @@
 
     &:hover {
       background-color: $sub-color;
+    }
+  }
+
+  .login-actions {
+    width: 100%;
+    padding-top: 10px;
+    display: flex;
+
+    .login-action-link {
+      text-decoration: none;
+      @include fontStyle(#777, 14px, normal);
+      cursor: pointer;
+
+      &:nth-child(3) {
+        padding-right: 10px;
+      }
+    }
+
+    div {
+      flex: 1;
     }
   }
 }

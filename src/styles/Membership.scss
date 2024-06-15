@@ -1,0 +1,46 @@
+@import "./Color.scss";
+@import "./Mixin.scss";
+
+.membership-container {
+  @include fullContainer;
+  position: absolute;
+  top: 50%;
+  padding: 50px 2rem;
+  box-sizing: border-box;
+  transform: translateY(-50%);
+
+  .membership-input {
+    @include flex(row, space-between, end);
+    margin-bottom: 20px;
+
+    .text-field {
+      width: 60%;
+    }
+
+    .btn {
+      background-color: $main-color;
+      @include fontStyle(#fff,16px, bold)
+    }
+
+    &:not(:nth-child(1)) {
+        .text-field {
+            width: 100%;
+        }
+    }
+  }
+
+  .sex-radio {
+    color: $sub-color;
+  }
+
+  .submit-btn {
+    @include fullContainer;
+    @include fontStyle(#fff, 20px, bold);
+    margin-top: 10px;
+    background-color: $main-color;
+
+    &:hover{ 
+      background-color: $main-color;
+    }
+  }
+}

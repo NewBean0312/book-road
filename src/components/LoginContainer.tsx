@@ -1,7 +1,8 @@
 import React from "react";
-
-import "../styles/Login.scss";
 import { Button, TextField } from "@mui/material";
+import LoginActions from "./LoginActions";
+import "../styles/Login.scss";
+
 
 const LoginContainer:React.FC = () => {
   return (
@@ -21,6 +22,7 @@ const LoginContainer:React.FC = () => {
       <Button variant="contained" className="login-btn">
         로그인
       </Button>
+      <LoginActions />
     </div>
   );
 };

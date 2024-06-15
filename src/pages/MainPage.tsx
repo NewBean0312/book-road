@@ -1,16 +1,16 @@
-import React from 'react';
+import React from "react";
 import Header from "../components/common/Header";
+import LoginContainer from "../components/LoginContainer";
 
 import "../styles/Main.scss";
-import LoginContainer from '../components/LoginContainer';
 
-const MainPage:React.FC = () => {
+const MainPage: React.FC = () => {
   return (
-    <div className='container'>
-        <Header />
-        <LoginContainer />
+    <div className="container">
+      <Header />
+      <LoginContainer />
     </div>
-  )
-}
+  );
+};
 
-export default MainPage
+export default MainPage;
